@@ -5,11 +5,16 @@ const dataFunc = () => {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
         },
-        body: JSON.stringify({query: "{ hello }"})
+        body: JSON.stringify({query: "{ users{name} }"})
     })
 
     .then(r => r.json())
-    // .then(data => console.log('data returned:', data.data.hello))
-    .then(data => document.getElementById("dataBox").innerHTML = `Sofia says: ${data.data.hello}`)
+    .then(data => document.getElementById("dataBox").innerHTML = `Sofia says: ${data.data.users.map(el => document.createElement("div").innerHTML = el.name)}`)
+
+    // data.data.users.map(el => document.createElement(div).innerHTML = el)
+
+    // document.createElement
+    // .then(data => console.log(data))
+
 
 }
