@@ -18,3 +18,26 @@ const dataFunc = () => {
 
 
 }
+
+window.onload = () => {
+    const githubDownload = document.getElementById("githubDownload");
+    githubDownload.addEventListener("click", () =>{
+        alert("Are you sure you want to leave this page?")
+    });
+}
+
+
+
+// const handleScroll = () => {
+//     window.scroll(0,0)
+// }
+
+// let doggie = {
+//     name: "Dog"
+// }
+// let storeDog = JSON.stringify(doggie)
+// localStorage.setItem('my dog', storeDog)
+
+// const handleStorage = () => {
+//     console.log(localStorage.getItem('my dog'))
+// }

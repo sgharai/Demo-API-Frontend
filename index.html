@@ -16,7 +16,7 @@
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item">
+              <a class="navbar-item" id="bulmaLogo">
                 <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
               </a>
               <span class="navbar-burger burger" data-target="navbarMenuHeroA">
@@ -37,7 +37,7 @@
                   Documentation
                 </a>
                 <span class="navbar-item">
-                  <a class="button is-primary is-inverted">
+                  <a class="button is-primary is-inverted" id="githubDownload">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
@@ -53,7 +53,7 @@
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title">
+          <h1 id="title" class="title">
             Title
           </h1>
           <h2 class="subtitle">
@@ -81,9 +81,9 @@
     <div class="container" style="width: 500px;">
       <div class="notification" id="dataBox">
         This container is <strong>centered</strong> on desktop.
-        <button onclick="dataFunc()" style="display: block;">
+        <a class="button" onclick="dataFunc()" style="display: block;">
           Click to see data
-        </button>
+      </a>
       </div>
     </div>
     <div class="container is-fluid" style="margin-top: 30px;">
@@ -137,7 +137,13 @@
       </div>
     </div>
   </div>
-  
+
+  <!-- <button onclick="handleScroll()" style="display: block; margin: auto;">
+    Click to scroll up
+  </button>
+  <button onclick="handleStorage()" style="display: block; margin: auto;">
+    Click to get Dog
+  </button> -->
 
   <footer class="footer" style="width: 100%;">
     <div class="content has-text-centered">
